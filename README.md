@@ -58,7 +58,7 @@ Go to *File* > *Add Package Dependencies...* and enter `https://github.com/pawel
 | [`stringToH3`](https://h3geo.org/docs/api/inspection#stringtoh3) | `H3Cell("8a283082a677fff")!` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3indexable/init(_:)-8n6gi) |
 | [`h3ToString`](https://h3geo.org/docs/api/inspection#h3tostring) | `try H3Cell(599686042433355775).description` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3indexable/description) |
 | [`isValidCell`](https://h3geo.org/docs/api/inspection#isvalidcell) | `cell.isValid` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/isvalid) |
-| [`isValidIndex`](https://h3geo.org/docs/api/inspection/#isvalidindex) | `cell.isSomeH3Index` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/init(base:_:)) |
+| [`isValidIndex`](https://h3geo.org/docs/api/inspection/#isvalidindex) | `cell.isSomeH3Index` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3indexable/issomeh3index) |
 | [`isResClassIII`](https://h3geo.org/docs/api/inspection#isresclassiii) | `cell.isResClassIII` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/isresclassiii) |
 | [`isPentagon`](https://h3geo.org/docs/api/inspection#ispentagon) | `cell.isPentagon` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/ispentagon) |
 | [`getIcosahedronFaces`](https://h3geo.org/docs/api/inspection#geticosahedronfaces) | ⚠️ Not yet available |
@@ -90,7 +90,7 @@ Go to *File* > *Add Package Dependencies...* and enter `https://github.com/pawel
 | :---: | :--- | :---: |
 | [`cellToParent`](https://h3geo.org/docs/api/hierarchy#celltoparent) | `try cell.parent(at: .res1)` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/parent(at:)) |
 | [`cellToChildren`](https://h3geo.org/docs/api/hierarchy#celltochildren) | `try cell.children(at: .res12)` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/children(at:)) |
-| [`cellToChildrenSize`](https://h3geo.org/docs/api/hierarchy#celltochildrensize) | `try cell.children(at: .res12).count` |
+| [`cellToChildrenSize`](https://h3geo.org/docs/api/hierarchy#celltochildrensize) | `try cell.children(at: .res12).count` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/childrencollection/count) |
 | [`cellToCenterChild`](https://h3geo.org/docs/api/hierarchy#celltocenterchild) | `try cell.children(at: .res12).center` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/childrencollection/center) |
 | [`cellToChildPos`](https://h3geo.org/docs/api/hierarchy#celltochildpos) | `try parentCell.children(at: .res12).index(of: childCell)` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/childrencollection/index(of:)) |
 | [`childPosToCell`](https://h3geo.org/docs/api/hierarchy#childpostocell) | `try cell.children(at: .res12)[23]` | [📖](https://swiftpackageindex.com/pawelmajcher/swiftyh3/0.5.0/documentation/swiftyh3/h3cell/childrencollection/subscript(_:)) |
