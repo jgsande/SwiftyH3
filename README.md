@@ -199,6 +199,28 @@ struct H3CellMapExampleView: View {
 }
 ```
 
+### MapContent (MapKit for SwiftUI)
+
+`H3Cell`, `H3Polygon`, and `H3DirectedEdge` conform to the [`MapContent`](https://developer.apple.com/documentation/mapkit/mapcontent) protocol which means that you can use them as map content when using MapKit for SwiftUI.
+
+```swift
+// H3 with MapKit for SwiftUI example
+
+import SwiftUI
+import MapKit
+import SwiftyH3
+
+struct H3CellMapExampleView: View {
+    var body: some View {
+        Map {
+            H3Cell("87283082affffff")
+            H3DirectedEdge("115283473fffffff").stroke(.blue, lineWidth: 2)
+            try? ["8528342ffffffff", "85283093fffffff"].map { H3Cell($0)! }.multiPolygon[0]
+        }
+    }
+}
+```
+
 ## License
 
 - SwiftyH3 (this repository) is licensed under the [Apache 2.0 license](LICENSE).
