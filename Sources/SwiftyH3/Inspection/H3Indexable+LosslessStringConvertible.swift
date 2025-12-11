@@ -38,7 +38,10 @@ extension H3Cell {
     public var description: String { try! self.h3String }
 
     public init?(_ h3String: String) {
-        try? self.init(h3String.asH3Index)
+        guard let h3Index = try? h3String.asH3Index else {
+            return nil
+        }
+        self.init(h3Index)
     }
 }
 
@@ -46,7 +49,10 @@ extension H3DirectedEdge {
     public var description: String { try! self.h3String }
 
     public init?(_ h3String: String) {
-        try? self.init(h3String.asH3Index)
+        guard let h3Index = try? h3String.asH3Index else {
+            return nil
+        }
+        self.init(h3Index)
     }
 }
 
@@ -54,6 +60,9 @@ extension H3Vertex {
     public var description: String { try! self.h3String }
 
     public init?(_ h3String: String) {
-        try? self.init(h3String.asH3Index)
+        guard let h3Index = try? h3String.asH3Index else {
+            return nil
+        }
+        self.init(h3Index)
     }
 }
